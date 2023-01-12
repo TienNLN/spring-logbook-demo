@@ -8,7 +8,6 @@ import lombok.Setter;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -21,7 +20,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ValidateUniqueFieldResponseDTO extends BaseResponseDTO implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = -2495470802750268987L;
 
     private ResultValidateUniqueDTO result;
@@ -30,7 +28,6 @@ public class ValidateUniqueFieldResponseDTO extends BaseResponseDTO implements S
     @Getter
     @Setter
     public static class ResultValidateUniqueDTO implements Serializable {
-        @Serial
         private static final long serialVersionUID = -566560572593034585L;
         @JsonProperty(value = "isValid")
         private boolean isValid;

@@ -2,7 +2,6 @@ package com.tiennln.springlogbookokhttpdemo.dtos;
 
 import lombok.*;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -17,7 +16,6 @@ import java.io.Serializable;
 @Builder
 public class ValidateUniqueFieldRequestDTO implements Serializable {
 
-    @Serial
     private static final long serialVersionUID = 421541390293526107L;
 
     private String field;
